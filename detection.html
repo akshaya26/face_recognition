@@ -1,0 +1,17 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>DETECTION</h1>
+<script>
+    $.getJSON('/detection',{
+	    answer: count
+    },function (data) {
+        reply = data.count;
+    })
+</script>
+<img src="{{ url_for('detection')}}">
+</body>
+</html>
